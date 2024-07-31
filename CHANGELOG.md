@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## [v1.10.0](https://github.com/zenstruck/messenger-test/releases/tag/v1.10.0)
+
+July 31st, 2024 - [v1.9.3...v1.10.0](https://github.com/zenstruck/messenger-test/compare/v1.9.3...v1.10.0)
+
+* 07ea68a feat: handler use deserialization version of the message with test_serialization=true #86 (#87) by @jaugustin
+* a33dc20 feat: have `TestTransport` additional receiver interfaces (#84) by @kbond
+* 7164fce fix: allows to use options configuration (#80) by @aegypius
+
 ## [v1.9.3](https://github.com/zenstruck/messenger-test/releases/tag/v1.9.3)
 
 March 21st, 2024 - [v1.9.2...v1.9.3](https://github.com/zenstruck/messenger-test/compare/v1.9.2...v1.9.3)
