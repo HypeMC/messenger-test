@@ -877,13 +877,13 @@ final class InteractsWithMessengerTest extends WebTestCase
         self::bootKernel(['environment' => 'multi_transport']);
 
         // "MessageH" is valid but calling getName is invalid after deserialization, transport async5 should catch this.
-        Assert::that(function ()  {
+        Assert::that(function() {
             $this->transport('async5')->send(new Envelope(new MessageH('foo')));
         })
             ->throws(HandlerFailedException::class)
         ;
 
-        Assert::run(function () {
+        Assert::run(function() {
             // no serialization test for async2, no error occurred
             $this->transport('async2')->send(new Envelope(new MessageH('foo')));
         });
